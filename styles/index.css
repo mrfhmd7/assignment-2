@@ -1,0 +1,338 @@
+/* styles for the whole code */
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Work+Sans:wght@500&display=swap');
+
+/* styling whole header */
+.head {
+    background: rgba(255, 144, 14, 0.1);
+}
+/* styling navigation bar */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-bar .nav-heading {
+  font-weight: 700;
+  font-size: 40px;
+  color: #131313;
+  padding-left: 80px;
+  margin-top: 50px;
+}
+.nav-bar .nav-tools {
+  display: flex;
+  gap: 40px;
+  margin: 70px 200px;
+}
+/* styling article part of the header */
+.header-section {
+  text-align: center;
+  margin: 60px 400px 50px 400px;
+}
+.header-article .article-head {
+  font-weight: 700;
+  font-size: 64px;
+}
+.header-article .article-para {
+  font-weight: 400;
+  font-size: 16px;
+}
+.btn-primary {
+  background-color: #ff900e;
+  width: 180px;
+  height: 64px;
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 20px;
+  font-style: normal;
+  color: #ffffff;
+  border: 0;
+  border-radius: 5px;
+}
+.header-section .header-image {
+  width: 900px;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+/* styling section-1 of main section */
+.section-1 {
+  display: flex;
+  gap: 73px;
+  margin: 70px 200px 130px 200px;
+}
+.section-1 .images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 24px;
+  grid-column-gap: 24px;
+}
+.section-1 .description {
+  margin-top: 200px;
+}
+.description-heading .quick {
+  color: #727272;
+  font-weight: 500;
+  font-size: 45px;
+}
+.description-heading .our {
+  color: #131313;
+  font-weight: 700;
+  font-size: 45px;
+}
+.description-heading .features {
+  color: #ff900e;
+  font-weight: 700;
+  font-size: 45px;
+}
+.description .article-para {
+  font-weight: 400;
+  font-size: 16px;
+  color: #727272;
+}
+/* styling section-2 */
+.section-2 {
+  margin: 50px 150px;
+}
+.section-2-contents {
+  display: flex;
+  gap: 54px;
+}
+
+.section-2-description .first-description {
+  margin-bottom: 100px;
+}
+.section-2-description .first-head {
+  font-weight: 700;
+  font-size: 45px;
+  border-left: 6px solid #ff900e;
+  height: 106px;
+}
+.section-2-description .description-para {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* styling section-2 rest description */
+.section-2-rest {
+  padding-left: 30px;
+}
+.rest-description .rest-head {
+  font-weight: 600;
+  font-size: 20px;
+  color: #131313;
+}
+.rest-description .description-para {
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 75px;
+}
+/* section-2 button styles */
+.section-2 .btn-primary {
+  position: relative;
+  left: 420px;
+  bottom: 190px;
+
+  font-weight: 700;
+  font-size: 35px;
+
+  width: 242px;
+  height: 150px;
+}
+/* section-3 styles */
+
+.facts {
+  margin-left: 250px;
+}
+
+.fact-description {
+  color: #727272;
+  font-size: 16px;
+  width: 500px;
+}
+
+.fact {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.fact-border {
+  border: 1px solid #ff900e;
+  border-radius: 8px;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.fact-border img{
+  padding: 5px;
+
+  /* align-items: center; */
+}
+
+.number{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #424242;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 10px;
+}
+
+.fact-info{
+  margin-bottom: 20px;
+  color: #727272;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* styling section-4 */
+
+.section-4-description{
+    margin-top: 150px;
+    text-align: center;
+}
+.section-4-logos{
+    display: flex;
+    justify-content: space-between;
+    margin: 70px 150px 50px 150px;
+}
+.section-4 .logos img{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+/* styling footer */
+.footer {
+    margin-top: 100px;
+    background-color: #0a0826;
+    width: 100%;
+    height: 300px;
+  }
+  .footer-info {
+    text-align: center;
+    color: white;
+    padding: 50px;
+  }
+  .footer-info .footer-title {
+    font-weight: 700;
+    font-size: 24px;
+    font-family: 'Poppins';
+  }
+  .footer-info h3 {
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .footer-info .footer-links a {
+    color: white;
+  }
+
+.hide{
+  display: none;
+}
+/* for small devices */
+
+@media screen and (max-width: 576px) {
+
+  /* for body  */
+
+  .head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-bar{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+  .nav-bar .nav-heading {
+    font-weight: 700;
+    font-size: 40px;
+    color: #131313;
+    margin-top: 50px;
+}
+
+  .header-section .header-image {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 60px;
+  }
+
+  .header-section{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+/* section 1 */
+
+  .section-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+  }
+
+  .section-1 .images {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 10px;
+
+}
+/* section 2 */
+
+.section-2-contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.section-2-description .description-para {
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 180px;
+}
+
+.section-2-image-1{
+  width: 250px;
+}
+
+/* section 3 */
+
+.facts{
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+.fact{
+  display: flex;
+  flex-direction: column;
+}
+
+.fact-description{
+  width: 280px;
+}
+
+/* section 4 */
+
+.section-4-logos{
+  flex-direction: column;
+  align-items: center;
+  row-gap: 15px;
+}
+
+.section-4-para{
+  width: 280px;
+}
+
+.footer{
+  width: 280px;
+  height: 280px;
+}
+}
